@@ -17,12 +17,22 @@
     .contact-button {
         width: 30%;
     }
+    /* ___ blog card ___ */
+    .blog-card img {
+        width: 100%;
+    }
+    .blog-card-inner {
+        display: block;
+    }
 }
 /* ==== lg ==== */
 @media (max-width: 991px) {
     /* ==== header ==== */
     .nav-menu {
         display: none;
+    }
+    .nav-menu.blog-card {
+        display: flex !important;
     }
     .menu-button {
         display: flex;
@@ -46,6 +56,10 @@
     /* ==== project page intro ==== */
     .column {
         flex: 0 0 calc(50% - 10px);
+    }
+    /* ========================= footer ========================= */
+    .footer-top {
+        display: block !important;
     }
 }
 /* ==== md ==== */
@@ -103,6 +117,17 @@
     }
     .card-item .card-body .btn-animation {
         padding: 8px 16px !important;
+    }
+    /* ___ project card ___ */
+    .project-title-box {
+        position: inherit !important;
+    }
+    .project-card {
+        position: inherit !important;
+        height: inherit !important;
+    }
+    .project-text h1 {
+        font-size: 30px;
     }
 }
 
